@@ -118,7 +118,6 @@ a:hover {
   color: #35C66B;
 }
 
-<<<<<<< HEAD
 .btn {
   color: #fff;
   font-size: 24px;
@@ -203,8 +202,6 @@ a:hover {
     width: 0;
   }
 }
-=======
->>>>>>> 6674486d5949e9a6c76c78a6b041fa8d8967671d
 .container {
   max-width: 1274px;
   padding: 0 12px;
@@ -303,7 +300,6 @@ header .btn-burger {
   opacity: 0;
 }
 
-<<<<<<< HEAD
 .banner .container {
   display: flex;
   gap: 24px;
@@ -325,8 +321,6 @@ header .btn-burger {
   gap: 16px;
 }
 
-=======
->>>>>>> 6674486d5949e9a6c76c78a6b041fa8d8967671d
 .footer {
   padding: 43px 0;
   margin-top: auto;
