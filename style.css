@@ -406,18 +406,6 @@ header .btn-burger {
 .banner .template-title {
   margin-bottom: 54px;
 }
-.banner .template-title::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  background: center/contain no-repeat;
-  width: 586px;
-  height: 653px;
-  background: url(./assets/img/decoration__banner-light-title.png) center no-repeat;
-}
 .banner-btn-group {
   display: flex;
   flex-wrap: wrap;
@@ -438,6 +426,20 @@ header .btn-burger {
   left: 73%;
   top: 100%;
   background: url(./assets/img/decoration__banner-light-btn-row.png) center no-repeat;
+}
+.banner-btn-group::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  background: center/contain no-repeat;
+  left: 40%;
+  top: -200%;
+  width: 586px;
+  height: 653px;
+  background: url(./assets/img/decoration__banner-light-title.png) center no-repeat;
 }
 .banner-statistic__title {
   font-size: 62px;
@@ -624,8 +626,8 @@ header .btn-burger {
 .we-make__content-box::before {
   content: "";
   position: absolute;
-  right: -15%;
-  top: -30%;
+  right: -7%;
+  top: -24%;
   width: 600px;
   height: 557px;
   background: url(./assets/img/decoration__we-make-content-box-accent.png) center no-repeat;
@@ -644,11 +646,11 @@ header .btn-burger {
 
 .we-make__line {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: -12%;
+  bottom: -50%;
   width: 1002px;
-  height: 624px;
-  display: none;
+  height: auto;
+  z-index: -1;
 }
 
 .footer {
