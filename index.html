@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="overlay"></div>
+    <div class="overlay" data-modal-close></div>
     <header id="header">
         <div class="container">
             <a href="index.html" class="header-logo">
@@ -26,6 +26,7 @@
                         <li class="menu__item"><a href="#" class="menu__link">Shop</a></li>
                     </ul>
                 </nav>
+                <a href="#" class="btn btn-secondary" id="feedback" data-triger-modal="feedback">Feedback</a>
             </div>
             <button id="btn-burger" class="btn btn-burger">
                 <span></span>
@@ -135,7 +136,7 @@
                     <h2 class="template-title">We make <span class="gradient-text">delicious</span></h2>
                     <h6 class="template-description">Only in 2021 we have made more than 100,000 orders for you, your loved ones, all of you, and in 2022 we are ready to destroy the market</h6>
                     <div class="we-make__process">
-                        <a href="#" data-triger-modal="process" class="btn btn-primary">
+                        <a href="#" id="process" data-triger-modal="process" class="btn btn-primary">
                     <svg>
                         <use href="#icon-triangle"></use>
                     </svg>
@@ -246,18 +247,53 @@
             <path d="M17.3596 11.071C17.6841 11.265 17.6841 11.7352 17.3596 11.9293L2.25661 20.9604C1.92333 21.1597 1.5 20.9196 1.5 20.5313L1.5 2.46899C1.5 2.08067 1.92333 1.84057 2.25661 2.03986L17.3596 11.071Z" stroke="white" stroke-width="3" stroke-miterlimit="1.55572" />
         </symbol>
     </svg>
-    <div class="modal">
+    <div id="process" class="modal">
         <div class="modal-header">
-            <span class="close" data-modal-span="close">&times;</span>
+            <span class="close" data-modal-close>&times;</span>
         </div>
         <div class="modal-body">
             <div class="modal-content">
                 <iframe width="720" height="405" src="https://www.youtube.com/embed/Z7e8tmcSrxg" title="Barista Show" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
-        <button class="btn btn-secondary" data-modal="close" type="button">Close</button>
+        <button class="btn btn-secondary" data-modal-close type="button">Close</button>
+    </div>
+
+    <div id="feedback" class="modal">
+        <div class="modal-header">
+            <span class="close" data-modal-close>&times;</span>
+        </div>
+        <div class="modal-body">
+            <div class="modal-content">
+                Here you could contact us.
+            </div>
+        </div>
+        <button class="btn btn-secondary" data-modal-close type="button">Close</button>
     </div>
     <script src="assets/js/custom.js"></script>
 </body>
 
 </html>
+<div id="process" class="modal">
+    <div class="modal-header">
+        <span class="close" data-modal-close>&times;</span>
+    </div>
+    <div class="modal-body">
+        <div class="modal-content">
+            <iframe width="720" height="405" src="https://www.youtube.com/embed/Z7e8tmcSrxg" title="Barista Show" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+    <button class="btn btn-secondary" data-modal-close type="button">Close</button>
+</div>
+
+<div id="feedback" class="modal">
+    <div class="modal-header">
+        <span class="close" data-modal-close>&times;</span>
+    </div>
+    <div class="modal-body">
+        <div class="modal-content">
+            Here you could contact us.
+        </div>
+    </div>
+    <button class="btn btn-secondary" data-modal-close type="button">Close</button>
+</div>

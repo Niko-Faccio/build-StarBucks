@@ -53,6 +53,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
   box-sizing: border-box;
 }
 
+button {
+  font-family: "Montserrat";
+}
+
 html {
   font-family: "Montserrat";
   font-size: 16px;
@@ -348,9 +352,10 @@ header {
   position: relative;
 }
 header > .container {
+  --gap: 94px;
   display: flex;
   align-items: center;
-  gap: 94px;
+  gap: var(--gap);
 }
 header .btn-burger {
   margin-left: auto;
@@ -360,9 +365,21 @@ header .btn-burger {
   z-index: 1;
 }
 
+.mobile-container {
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+  width: 100%;
+}
+.mobile-container .btn {
+  margin-left: auto;
+  font-size: 20px;
+  padding: 16px;
+}
+
 .menu__list {
   display: flex;
-  gap: 94px;
+  gap: var(--gap);
 }
 .menu__link {
   font-size: 20px;
@@ -713,6 +730,7 @@ header .btn-burger {
   height: 0;
   width: 0;
   transition: 0.1s;
+  cursor: pointer;
 }
 .overlay.show {
   height: 100vh;
@@ -725,7 +743,7 @@ header .btn-burger {
   left: 50%;
   z-index: 10;
   transform: translate(-50%);
-  border: 1px solid;
+  border: 4px solid;
   border-radius: 15px;
   padding: 10px;
   background-color: #237249;
@@ -739,6 +757,10 @@ header .btn-burger {
   visibility: visible;
   opacity: 1;
 }
+.modal .btn-secondary {
+  padding: 12px 32px;
+  font-size: 20px;
+}
 
 .modal-header {
   display: flex;
@@ -747,6 +769,7 @@ header .btn-burger {
 
 .modal-content {
   margin: 20px;
+  padding: 40px 20px;
 }
 
 /* The Close Button */
@@ -945,18 +968,25 @@ header .btn-burger {
     top: 0;
     width: 100%;
     background: rgba(11, 12, 13, 0.8196078431);
-    padding: 25px 25px 75px;
+    padding: 25px;
     background-image: linear-gradient(245deg, rgba(35, 114, 73, 0.32) 0%, rgba(53, 198, 107, 0.32) 51.85%);
     backdrop-filter: blur(10px);
     transition: 0.3s;
     visibility: hidden;
     transform: translate(0, -100%);
+    flex-direction: column;
+    gap: 32px;
   }
   .mobile-container.show {
-    top: 97px;
+    top: 68px;
     transform: translate(0, 0);
     visibility: visible;
     z-index: 3;
+  }
+  .mobile-container .btn.btn-secondary {
+    margin-left: initial;
+    font-size: 20px;
+    padding: 10px;
   }
   .menu__list {
     gap: 48px;
