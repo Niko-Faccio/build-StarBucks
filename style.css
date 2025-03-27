@@ -724,6 +724,7 @@ header .btn-burger {
 .products-title-wrapper {
   display: flex;
   align-items: center;
+  margin-bottom: 56px;
 }
 .products-title-wrapper .template-title {
   max-width: 390px;
@@ -775,7 +776,7 @@ header .btn-burger {
 }
 .product .btn {
   font-size: 17px;
-  padding: 23px 38px;
+  padding: 18px 38px;
 }
 
 .overlay {
