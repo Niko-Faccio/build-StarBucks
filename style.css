@@ -725,7 +725,7 @@ header .btn-burger {
 .carousel-wrapper {
   position: relative;
 }
-.carousel-wrapper .swiper {
+.carousel-wrapper .swiper-product {
   max-width: 1252px;
   margin: 0 auto;
 }
@@ -858,12 +858,14 @@ header .btn-burger {
   z-index: 1;
   background: red;
 }
-.swiper-navigation .swiper-button-prev,
-.swiper-navigation .swiper-button-next {
+.swiper-navigation .swiper-button-prev, .swiper-navigation .swiper-events .swiper-events-button-prev, .swiper-events .swiper-navigation .swiper-events-button-prev,
+.swiper-navigation .swiper-button-next,
+.swiper-navigation .swiper-events .swiper-events-button-next,
+.swiper-events .swiper-navigation .swiper-events-button-next {
   position: static;
   transform: rotate(90deg);
 }
-.swiper-navigation .swiper-button-prev {
+.swiper-navigation .swiper-button-prev, .swiper-navigation .swiper-events .swiper-events-button-prev, .swiper-events .swiper-navigation .swiper-events-button-prev {
   transform: rotate(270deg);
 }
 
@@ -929,15 +931,7 @@ header .btn-burger {
   z-index: -1;
 }
 
-.events-grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  grid-column-gap: 24px;
-  grid-row-gap: 24px;
-}
-
-.event {
+.event-item {
   height: 260px;
   display: flex;
   flex-direction: column;
@@ -949,35 +943,50 @@ header .btn-burger {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.event-title {
+.event-item-title {
   max-width: 230px;
   line-height: 108.5%;
 }
 
-.event-1 {
+.event-area-1 {
   grid-area: 1/1/4/7;
 }
 
-.event-2 {
+.event-area-2 {
   grid-area: 1/7/4/13;
 }
 
-.event-3 {
+.event-area-3 {
   grid-area: 4/1/7/5;
 }
-.event-3 .event-title {
+.event-area-3 .event-title {
   max-width: 245px;
 }
 
-.event-4 {
+.event-area-4 {
   grid-area: 4/5/7/9;
 }
 
-.event-5 {
+.event-area-5 {
   grid-area: 4/9/7/13;
 }
-.event-5 .event-title {
+.event-area-5 .event-title {
   max-width: 300px;
+}
+
+.carousel-wrapper {
+  position: relative;
+}
+.carousel-wrapper .swiper-events {
+  max-width: 1252px;
+  margin: 0 auto;
+}
+
+.swiper-events .swiper-events-button-prev {
+  cursor: pointer;
+}
+.swiper-events .swiper-events-button-next {
+  cursor: pointer;
 }
 
 .events-line {
@@ -1219,9 +1228,20 @@ header .btn-burger {
   .btn-burger {
     display: none;
   }
+  .events-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+  }
+  .swiper-events-button-next.btn.btn-outline,
+  .swiper-events-button-prev.btn.btn-outline {
+    display: none;
+  }
 }
 @media screen and (max-width: 1560.99px) {
-  .carousel-wrapper .swiper {
+  .carousel-wrapper .swiper-product {
     max-width: 929px;
   }
   .swiper-navigation {
@@ -1234,7 +1254,7 @@ header .btn-burger {
   }
 }
 @media screen and (max-width: 1233.99px) {
-  .carousel-wrapper .swiper {
+  .carousel-wrapper .swiper-product {
     max-width: 603px;
   }
   .swiper-navigation {
@@ -1474,7 +1494,7 @@ header .btn-burger {
     font-size: 12px;
     line-height: inherit;
   }
-  .carousel-wrapper .swiper {
+  .carousel-wrapper .swiper-product {
     max-width: 402px;
   }
   .swiper-navigation {
@@ -1583,7 +1603,7 @@ header .btn-burger {
     left: 6vw;
     bottom: -30vw;
   }
-  .carousel-wrapper .swiper {
+  .carousel-wrapper .swiper-product {
     max-width: 402px;
   }
   .swiper-navigation {
@@ -1602,7 +1622,7 @@ header .btn-burger {
     left: 6vw;
     bottom: -64vw;
   }
-  .carousel-wrapper .swiper {
+  .carousel-wrapper .swiper-product {
     max-width: 184px;
   }
   .swiper-navigation {
