@@ -309,36 +309,6 @@
                     <p class="events-decoration-accent"></p>
                 </div>
 
-                <!--
-        
-        <div class="swiper swiper-events">
-            <div class="events-wrapper">
-                <div class="swiper-wrapper events-grid">
-                    <div class="swiper-slide event event-1" style="background-image: url(./assets/img/events-1.png);">
-                        <h3 class="event-title">TWO COFFEE FOR 1 PRICE</h3>   
-                        <a href="#" class="btn btn-primary">More</a> 
-                    </div>
-                    <div class="swiper-slide event event-2" style="background-image: url(./assets/img/events-2.png);">
-                        <h3 class="event-title">KITCHEN TOUR</h3>   
-                        <a href="#" class="btn btn-primary">More</a>     
-                    </div>
-                    <div class="swiper-slide event event-3" style="background-image: url(./assets/img/events-3.png);">
-                        <h3 class="event-title">FREE COFFEE FOR 3 COFFEE</h3>   
-                        <a href="#" class="btn btn-primary">More</a>     
-                    </div>
-                    <div class="swiper-slide event event-4" style="background-image: url(./assets/img/events-4.png);">
-                        <h3 class="event-title">OUR INSTAGRAM</h3>   
-                        <a href="#" class="btn btn-primary">More</a>     
-                    </div>
-                    <div class="swiper-slide event event-5" style="background-image: url(./assets/img/events-5.png);">
-                        <h3 class="event-title">WHERE ARE YOU CHOOSE US?</h3>   
-                        <a href="#" class="btn btn-primary">More</a>     
-                    </div>
-                </div>
-            </div>
-        </div>
--->
-
                 <div class="carousel-wrapper">
                     <div class="swiper swiper-events">
                         <div class="swiper-wrapper events-grid">
@@ -620,8 +590,62 @@
         </div>
         <div class="modal-body">
             <div class="modal-content">
-                <p>Here you could contact us.</p>
-                <p>We are very sorry, we are working on it now. Contact us a little later. Have a nice day.</p>
+                <form action="" autocomplete="off">
+
+                    <fieldset>
+                        <legend></legend>
+                        <div class="input-row">
+                            <div class="input-box">
+                                <label for="fname">Your Name:</label>
+                                <input id="fname" placeholder="Vincenco Napoli" type="text">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <label for="phone">Tel.:</label>
+                            <input type="tel" name="" id="phone" placeholder="+421 000 000 000">
+                        </div>
+                        <div class="input-box">
+                            <label for="email">E-mail::</label>
+                            <input type="email" name="email" id="email" placeholder="example@gmail.com">
+                        </div>
+
+                        <div class="control-list">
+                            <div class="gender">
+                                <p class="control-list__title">Gender:</p>
+                                <div class="control-box__item">
+                                    <input type="radio" id="male" name="gender">
+                                    <label for="male">male</label>
+                                </div>
+                                <div class="control-box__item">
+                                    <input type="radio" id="female" name="gender">
+                                    <label for="female">female</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="country-live">
+                            <label for="country">Country:</label>
+                            <input id="country" placeholder="Italy" type="text">
+                        </div>
+                    </fieldset>
+
+                    <div class="text">
+                        <label for="message">Text:</label>
+                        <textarea name="message" rows="10" cols="30" placeholder="Your message..."></textarea>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-modal-nav">
+                <div class="modal-footer__btn-nav">
+
+                    <button class="btn btn-secondary" type="reset">Reset</button>
+                    <button class="btn btn-primary" type="submit" value="submit">Submit</button>
+
+                </div>
             </div>
         </div>
     </div>
@@ -671,8 +695,62 @@
     </div>
     <div class="modal-body">
         <div class="modal-content">
-            <p>Here you could contact us.</p>
-            <p>We are very sorry, we are working on it now. Contact us a little later. Have a nice day.</p>
+            <form action="" autocomplete="off">
+
+                <fieldset>
+                    <legend></legend>
+                    <div class="input-row">
+                        <div class="input-box">
+                            <label for="fname">Your Name:</label>
+                            <input id="fname" placeholder="Vincenco Napoli" type="text">
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <label for="phone">Tel.:</label>
+                        <input type="tel" name="" id="phone" placeholder="+421 000 000 000">
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail::</label>
+                        <input type="email" name="email" id="email" placeholder="example@gmail.com">
+                    </div>
+
+                    <div class="control-list">
+                        <div class="gender">
+                            <p class="control-list__title">Gender:</p>
+                            <div class="control-box__item">
+                                <input type="radio" id="male" name="gender">
+                                <label for="male">male</label>
+                            </div>
+                            <div class="control-box__item">
+                                <input type="radio" id="female" name="gender">
+                                <label for="female">female</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="country-live">
+                        <label for="country">Country:</label>
+                        <input id="country" placeholder="Italy" type="text">
+                    </div>
+                </fieldset>
+
+                <div class="text">
+                    <label for="message">Text:</label>
+                    <textarea name="message" rows="10" cols="30" placeholder="Your message..."></textarea>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <div class="btn-modal-nav">
+            <div class="modal-footer__btn-nav">
+
+                <button class="btn btn-secondary" type="reset">Reset</button>
+                <button class="btn btn-primary" type="submit" value="submit">Submit</button>
+
+            </div>
         </div>
     </div>
 </div>

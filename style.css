@@ -958,7 +958,7 @@ header .btn-burger {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.event-item-title {
+.event-item h3 {
   max-width: 230px;
   line-height: 108.5%;
 }
@@ -1175,6 +1175,7 @@ header .btn-burger {
   max-width: 640px;
   line-height: 1.2em;
 }
+.modal .btn-primary,
 .modal .btn-secondary {
   padding: 12px 32px;
   font-size: 20px;
@@ -1195,6 +1196,22 @@ header .btn-burger {
 .modal-body .modal-content {
   padding: 10px;
 }
+.modal-body .gender {
+  display: flex;
+  gap: 15px;
+}
+.modal-body input {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.modal-body textarea {
+  font-size: 20px;
+  width: 100%;
+  padding: 10px;
+}
+.modal-body .text input {
+  align-items: center;
+}
 
 .modal-footer {
   display: flex;
@@ -1202,14 +1219,7 @@ header .btn-burger {
   gap: 20px;
 }
 .modal-footer .btn-modal-nav {
-  max-width: max-content;
-  border: 1px solid;
-  border-radius: 10px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
   padding: 10px;
-  font-size: 20px;
 }
 .modal-footer .modal-footer__btn-nav {
   display: flex;
@@ -1475,10 +1485,13 @@ header .btn-burger {
   .btn.btn-outline svg {
     height: 22px;
   }
-  .btn.btn-primary,
+  .btn.btn-primary {
+    font-size: 16px;
+    padding: 17px 51px;
+  }
   .btn.btn-secondary {
-    font-size: 12px;
-    padding: 8px 12px;
+    font-size: 16px;
+    padding: 17px 36px;
   }
   .we-make {
     display: flex;
@@ -1537,6 +1550,10 @@ header .btn-burger {
     width: 193px;
     justify-content: center;
     align-items: center;
+  }
+  .we-make .we-make__process .btn.btn-primary {
+    font-size: 14px;
+    padding: 8px 21px;
   }
   .we-make .we-make__line {
     display: none;
@@ -1722,9 +1739,9 @@ header .btn-burger {
   .product-volume {
     font-size: 13px;
   }
-  .product .btn {
-    font-size: 11px;
-    padding: 9px 25px;
+  .product .btn.btn-primary {
+    font-size: 12px;
+    padding: 12px 23px;
   }
   .modal-footer .btn-modal-nav {
     padding: 4px;
@@ -1734,6 +1751,11 @@ header .btn-burger {
     font-size: 22px;
     padding: 0 6px;
     border-radius: 2px;
+  }
+  .events .btn.btn-primary {
+    font-size: 13px;
+    font-weight: 800;
+    padding: 14px 30px;
   }
   .contacts .container {
     flex-direction: column-reverse;
