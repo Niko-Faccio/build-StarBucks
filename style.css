@@ -957,6 +957,8 @@ header .btn-burger {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 400px;
+  margin: 0 auto;
 }
 .event-item h3 {
   max-width: 230px;
