@@ -957,7 +957,7 @@ header .btn-burger {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 400px;
+  max-width: 614px;
   margin: 0 auto;
 }
 .event-item h3 {
@@ -1193,6 +1193,11 @@ header .btn-burger {
 }
 .modal-content video {
   width: 100%;
+}
+.modal-content .input-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
 }
 
 .modal-body .modal-content {
@@ -1493,7 +1498,7 @@ header .btn-burger {
   }
   .btn.btn-secondary {
     font-size: 16px;
-    padding: 17px 36px;
+    padding: 17px 35px;
   }
   .we-make {
     display: flex;
@@ -1758,6 +1763,9 @@ header .btn-burger {
     font-size: 13px;
     font-weight: 800;
     padding: 14px 30px;
+  }
+  .events .event-item {
+    max-width: 400px;
   }
   .contacts .container {
     flex-direction: column-reverse;
